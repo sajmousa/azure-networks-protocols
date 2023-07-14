@@ -19,11 +19,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create a Resource Group
 - Create a Virtual Machine
-- Observe ICMP Traffic
-- Observe SSH Traffic
-- Observe DHCP Traffic
-- Observe DNS Traffic
-- Observe RDP Traffic
+- View and Observe ICMP, SSH, DHCP, DNS, and RDP Traffic
+  
 
 <h2>Actions and Observations</h2>
 </br>
@@ -157,10 +154,10 @@ Observe RDP traffic to finish up this tutorial
   Back in Wireshark, filter for RDP traffic only using "tcp.port==3389".
 </p>
 <p>
-  You'll be obseving a non-stop stream of traffic. Do you know why there is constant traffic in our tcp.port==3389?
+  Do you know why there is constant traffic in our tcp.port==3389?
 </p>
 <p>
-  The answer is because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted:
+ It is because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted:
 </p>
 <p>
   <img src="https://i.imgur.com/hNlhTVp.png" height="75%" width="100%" alt="RDP traffic"/>
